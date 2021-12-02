@@ -1,2 +1,5 @@
-# gsbc-intro-web
-These are course notes / materials for a intro to web programming course.
+# GSBC Intro to Web Programming
+
+**Dr. Jonathan Metzgar**
+  
+These are course notes / materials for an intro to web programming course.
