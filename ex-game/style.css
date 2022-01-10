@@ -1,0 +1,15 @@
+article {
+    font-family: 'STIX Two Text', 'Times New Roman', Times, serif;
+    width: 4.5in;
+}
+
+h2 {
+    font-family: 'Linux Biolinum', 'Linux Biolinum Capitals', sans-serif;
+}
+
+
+body {
+    width: 6in;
+    margin-left: auto;
+    margin-right: auto;
+}

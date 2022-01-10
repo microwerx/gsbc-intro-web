@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Simple Game</title>
+    </head>
+
+    <body>
+        <h1>Dice roller</h1>
+
+        <p>This page rolls a d6.</p>
+
+        <button onclick="rollDice('diceContent', 1, 7)">Roll</button>
+        <button onclick="for (let i=0; i<100; i++) rollDice('diceContent', 1, 7)">Roll 100</button>
+
+        <hr/>
+
+        <div class="content" id="diceContent">Click the button to roll a d6.</div>
+
+        <h2>Dice counts</h2>
+        <table>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <td id="dice1">0</td>
+                <td id="dice2">0</td>
+                <td id="dice3">0</td>
+                <td id="dice4">0</td>
+                <td id="dice5">0</td>
+                <td id="dice6">0</td>
+            </tr>
+        </table>
+
+        <h2>Pair Counts</h2>
+        <button onclick="rollDicePair('pairContent')">Roll</button>
+        <button onclick="for (let i=0;i<100;i++) rollDicePair('pairContent')">Roll 100</button>
+        <p id="pairContent">Click roll above.</p>
+        <table>
+            <tr><th>Sum</th><th>Count</th></tr>
+            <tr><td>2</td><td id="pair2">0</td></tr>
+            <tr><td>3</td><td id="pair3">0</td></tr>
+            <tr><td>4</td><td id="pair4">0</td></tr>
+            <tr><td>5</td><td id="pair5">0</td></tr>
+            <tr><td>6</td><td id="pair6">0</td></tr>
+            <tr><td>7</td><td id="pair7">0</td></tr>
+            <tr><td>8</td><td id="pair8">0</td></tr>
+            <tr><td>9</td><td id="pair9">0</td></tr>
+            <tr><td>10</td><td id="pair10">0</td></tr>
+            <tr><td>11</td><td id="pair11">0</td></tr>
+            <tr><td>12</td><td id="pair12">0</td></tr>
+        </table>
+
+        <h2>Pair Chart</h2>
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>
