@@ -16,3 +16,7 @@ extension=sqlite3
 ```
 
 If you're starting a development server,
+
+```powershell
+PS C:\> C:\php\php.exe -S localhost:8000 -c php.ini
+```
