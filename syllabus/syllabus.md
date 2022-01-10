@@ -17,7 +17,8 @@ In this class, you will be introduced to web programming. This includes computer
 
 |                  |                                   |
 | :--------------: | :-------------------------------- |
-|  Course GitHub   | [gsbc-intro-web]                  |
+|  Course GitHub   | GitHub [gsbc-intro-web]           |
+| Course Examples  | [Examples]                        |
 | Student Bulletin | [F21-Student-Bulletin_Online.pdf] |
 
 ## Schedule
@@ -88,4 +89,5 @@ The cost of running a tiny node on Linode is about $5/month. You must get this w
 
 <!-- Links -->
 [F21-Student-Bulletin_Online.pdf]: https://gsbc.edu/wp-content/uploads/2021/11/F21-Student-Bulletin_Online.pdf
-[GSBC-ME220]: https://github.com/microwerx/gsbc-intro-web
+[gsbc-intro-web]: https://github.com/microwerx/gsbc-intro-web
+[Examples]: https://microwerx.github.io/gsbc-intro-web/
