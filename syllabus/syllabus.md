@@ -67,18 +67,18 @@ Final grades are rounded to the nearest integer and then assigned to a letter gr
 
 ## Due Dates
 
-|  No.  |               Assignment                |  Language   |  Due Date  |
-| :---: | :-------------------------------------: | :---------: | :--------: |
-|       |          Set up GitHub account          |             | 2022-01-24 |
-| PROJ1 |   Write a Biography and Project Ideas   |  Markdown   | 2022-01-31 |
-|  HW1  |     Make a web site with simple JS      |   HTML/JS   | 2022-02-14 |
-|  HW2  |      Implement an Algorithm in JS       |   HTML/JS   | 2022-02-21 |
-|  HW3  | Make a user interface with JS callbacks | HTML/CSS/JS | 2022-02-28 |
-| PROJ2 |      Show off your midterm project      | HTML/CSS/JS | 2022-03-14 |
-|  HW4  |        Use a JavaScript library         |   HTML/JS   | 2022-03-21 |
-|  HW5  |    AJAX: Request HTML from a server     | HTML/CSS/JS | 2022-03-28 |
-|  HW6  | Organize your Make a Game/App with OOP  | HTML/CSS/JS | 2022-04-11 |
-| PROJ3 |    Show off your final project goal     | HTML/CSS/JS | 2022-04-25 |
+|  No.  |                     Assignment                     |  Language   |  Due Date  |
+| :---: | :------------------------------------------------: | :---------: | :--------: |
+|       | Set up GitHub account and `gsbc-intro-web` project |             | 2022-01-24 |
+| PROJ1 |        Write a Biography and Project Ideas         |  Markdown   | 2022-01-31 |
+|  HW1  |           Make a web site with simple JS           |   HTML/JS   | 2022-02-14 |
+|  HW2  |            Implement an Algorithm in JS            |   HTML/JS   | 2022-02-21 |
+|  HW3  |      Make a user interface with JS callbacks       | HTML/CSS/JS | 2022-02-28 |
+| PROJ2 |           Show off your midterm project            | HTML/CSS/JS | 2022-03-14 |
+|  HW4  |              Use a JavaScript library              |   HTML/JS   | 2022-03-21 |
+|  HW5  |          AJAX: Request HTML from a server          | HTML/CSS/JS | 2022-03-28 |
+|  HW6  |       Organize your Make a Game/App with OOP       | HTML/CSS/JS | 2022-04-11 |
+| PROJ3 |          Show off your final project goal          | HTML/CSS/JS | 2022-04-25 |
 
 <!-- ## Semester Project
 
