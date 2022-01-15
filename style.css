@@ -1,11 +1,20 @@
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'URW Geometric', 'Linux Biolinum', 'STIX Two Text', sans-serif;
+    font-family: 'URW Geometric', 'STIX Two Text', Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bolder;
 }
 
 body {
-    font-family: 'STIX Two Text', serif;
+    font-family: 'STIX Two Text', Georgia, 'Times New Roman', Times, serif;
     margin-left: auto;
     margin-right: auto;
-    width: 6in;
+    /* width: 6in; */
 }

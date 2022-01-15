@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Linux Biolinum O', 'STIX Two Text', 'URW Geometric', Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Linux Libertine', 'STIX Two Text', Georgia, 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6in;
+}
