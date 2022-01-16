@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title>Game Compo Example</title>
+	</head>
+	<body>
+		<h1>Game Compo Example</h1>
+
+		<div id="gameScreen">game screen</div>
+
+		<!-- These buttons will get callbacks for the game controls -->
+
+		<div id="gameControls">
+			<button id="startButton">Start</button>
+			<button id="resetButton">Reset</button>
+			<button id="leftButton"  onclick="game.move(-1, 0)">&#x2b05;</button>
+			<button id="rightButton" onclick="game.move( 1, 0)">&#x27a1;</button>
+			<button id="downButton"  onclick="game.move( 0,-1)">&#x2b07;</button>
+			<button id="upButton"    onclick="game.move( 0, 1)">&#x2b06;</button>
+			<button id="action1Button">Action 1</button>
+			<button id="action2Button">Action 2</button>
+		</div>
+
+        <script src="game.js"></script>
+	</body>
+</html>
