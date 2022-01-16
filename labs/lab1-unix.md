@@ -79,3 +79,16 @@ Count the number of times `said` is found with `cat 98-0.txt | grep -c said`
 `Vi` is a programmer's text editor. It is normally available on all Un*x systems. The slightly easier to use `nano` is also commonly available, but not as full featured.
 
 Let's prepare for this in next weeks class. Here is a YouTube video to help you learn Vi [Vim Basics in 8 minutes](https://www.youtube.com/watch?v=ggSyF1SVFr4).
+
+- 0:00 - Introduction
+- 0:53 - edit a file in vim (vim filename.txt || vi filename.txt)
+- 1:12 - how to quit vim (:q)
+- 1:50 - saving files in vim, and other ways of exiting
+- 2:12 - what are vim modes (ESC/i)
+- 3:14 - how to delete a single line with vim (dd)
+- 3:30 - how to delete multiple lines with vim (#dd, e.g. 5dd)
+- 3:47 - how to undo changes in vim (u)
+- 4:06 - how to 'redo' changes (ctrl-r)
+- 4:32 - searching text in vim ( /yourtext + ENTER)
+- 5:52 - how to find and replace text in vim ( :%s/yourtext/replacetext/g (+c))
+- 7:23 - Conclusion
