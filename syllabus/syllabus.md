@@ -31,16 +31,16 @@ Hello, I'm your instructor Dr. Jonathan Metzgar. Welcome to class. I'm excited t
 
 The following links will be useful at different times of this course. I also heartily recommend [Grammarly](https://grammarly.com) and spell checking to improve your English.
 
-|                        |                                                                              |
-| :--------------------: | :--------------------------------------------------------------------------- |
-| **Requirements Sheet** | <https://github.com/microwerx/gsbc-intro-web/syllabus/requirements-sheet.md> |
-|    Important Links     | <https://github.com/microwerx/gsbc-intro-web/syllabus/important-links.md>    |
-|         GitHub         | <https://github.com>                                                         |
-|     Course GitHub      | <https://github.com/microwerx/gsbc-intro-web>                                |
-|    Course Examples     | <https://microwerx.github.io/gsbc-intro-web/>                                |
-|        VS Code         | <https://code.visualstudio.com>                                              |
-|          GVIM          | <https://vim.org>                                                            |
-|    Student Bulletin    | [F21-Student-Bulletin_Online.pdf]                                            |
+|                        |                                               |
+| :--------------------: | :-------------------------------------------- |
+| **Requirements Sheet** | [requirements-sheet.md]                       |
+|    Important Links     | [important-links.md]                          |
+|         GitHub         | <https://github.com>                          |
+|     Course GitHub      | <https://github.com/microwerx/gsbc-intro-web> |
+|    Course Examples     | <https://microwerx.github.io/gsbc-intro-web/> |
+|        VS Code         | <https://code.visualstudio.com>               |
+|          GVIM          | <https://vim.org>                             |
+|    Student Bulletin    | [F21-Student-Bulletin_Online.pdf]             |
 
 Using [Bing](https://bing.com) or [Google](https://google.com) is usually the fastest way to look up answers for programming questions. However, the following websites are really useful in learning web technologies.
 
@@ -98,7 +98,7 @@ Final grades are rounded to the nearest integer and then assigned to a letter gr
 | B-    | 84          | F     | 65&ndash;0  |
 | C+    | 83          |       |             |
 
-Detailed grading details are in the **[detailed-homework-criteria.md](detailed-grading-criteria.md)** document.
+Detailed grading details are in the **[detailed-grading-criteria.md]** document.
 
 ## Submitting Homework
 
@@ -153,3 +153,6 @@ Our general class procedure is to conduct attendance, open the class in prayer, 
 [gsbc-intro-web]: https://github.com/microwerx/gsbc-intro-web
 [Examples]: https://microwerx.github.io/gsbc-intro-web/
 [jmetzgar@gsbc.edu]: mailto:jmetzgar@gsbc.edu
+[requirements-sheet.md]: https://github.com/microwerx/gsbc-intro-web/blob/main/syllabus/requirements-sheet.md
+[important-links.md]: https://github.com/microwerx/gsbc-intro-web/blob/main/syllabus/important-links.md
+[detailed-grading-criteria.md]: https://github.com/microwerx/gsbc-intro-web/blob/main/syllabus/detailed-grading-criteria.md
