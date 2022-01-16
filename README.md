@@ -7,6 +7,10 @@ These are course notes / materials for an intro to web programming course.
 * [Spring 2022 Syllabus](syllabus/me220-syllabus.pdf)
 * [Examples](https://microwerx.github.io/gsbc-intro-web)
 
+## Reading List
+
+* [Reading list](syllabus/requirements-sheet.md)
+
 ## Labs
 
 * [lab1-unix](labs/lab1-unix.md)
