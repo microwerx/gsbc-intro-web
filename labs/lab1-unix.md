@@ -54,10 +54,6 @@ If the file `myfile` does not exist, the `touch` command will create it, otherwi
 
 Use the `cat` command.
 
-## Editing the file with Vi
-
-`Vi` is a programmer's text editor. It is normally available on all Un*x systems. The slightly easier to use `nano` is also commonly available, but not as full featured.
-
 ## Checking access to a remote server
 
 Try out `ping www.google.com`
@@ -77,3 +73,9 @@ View it with `less 98-0.txt`
 Search for the word `said` with `cat 98-0.txt | grep said`
 
 Count the number of times `said` is found with `cat 98-0.txt | grep -c said`
+
+## Editing the file with Vi
+
+`Vi` is a programmer's text editor. It is normally available on all Un*x systems. The slightly easier to use `nano` is also commonly available, but not as full featured.
+
+Let's prepare for this in next weeks class. Here is a YouTube video to help you learn Vi [Vim Basics in 8 minutes](https://www.youtube.com/watch?v=ggSyF1SVFr4).
