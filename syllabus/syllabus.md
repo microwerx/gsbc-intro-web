@@ -21,18 +21,26 @@ Hello, I'm your instructor Dr. Jonathan Metzgar. Welcome to class. I'm excited t
 
 <!-- | Discord | https://discord.gg/9ASEz2sW8B | -->
 
+## Class Verses
+
+> "**God is not a man, that he should lie**; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?" (Numbers 23:19)
+
+> "That by two immutable things, in which **it was impossible for God to lie**, we might have a strong consolation, who have fled for refuge to lay hold upon the hope set before us:" (Hebrews 6:18)
+
 ## Important Links
 
 The following links will be useful at different times of this course. I also heartily recommend [Grammarly](https://grammarly.com) and spell checking to improve your English.
 
-|                  |                                               |
-| :--------------: | :-------------------------------------------- |
-|      GitHub      | <https://github.com>                          |
-|  Course GitHub   | <https://github.com/microwerx/gsbc-intro-web> |
-| Course Examples  | <https://microwerx.github.io/gsbc-intro-web/> |
-| Student Bulletin | [F21-Student-Bulletin_Online.pdf]             |
-|     VS Code      | <https://code.visualstudio.com>               |
-|       GVIM       | <https://vim.org>                             |
+|                        |                                                                              |
+| :--------------------: | :--------------------------------------------------------------------------- |
+| **Requirements Sheet** | <https://github.com/microwerx/gsbc-intro-web/syllabus/requirements-sheet.md> |
+|    Important Links     | <https://github.com/microwerx/gsbc-intro-web/syllabus/important-links.md>    |
+|         GitHub         | <https://github.com>                                                         |
+|     Course GitHub      | <https://github.com/microwerx/gsbc-intro-web>                                |
+|    Course Examples     | <https://microwerx.github.io/gsbc-intro-web/>                                |
+|        VS Code         | <https://code.visualstudio.com>                                              |
+|          GVIM          | <https://vim.org>                                                            |
+|    Student Bulletin    | [F21-Student-Bulletin_Online.pdf]                                            |
 
 Using [Bing](https://bing.com) or [Google](https://google.com) is usually the fastest way to look up answers for programming questions. However, the following websites are really useful in learning web technologies.
 
@@ -43,8 +51,6 @@ Using [Bing](https://bing.com) or [Google](https://google.com) is usually the fa
 |     W3 Schools     | <https://www.w3schools.com/>           |
 | VI Quick Reference | <https://ss64.com/vi.html>             |
 |   Linux Commands   | <https://ss64.com/bash/>               |
-
-More links can be found in the [important-links.md](important-links.md) document.
 
 ## Schedule
 
@@ -82,13 +88,17 @@ There are 6 homework assignments worth 100 points, a project proposal worth 100 
 
 Final grades are rounded to the nearest integer and then assigned to a letter grade. The grading scale is listed below:
 
-| Grade |  Range   |
-| :---: | :------: |
-|   A   | 90 - 100 |
-|   B   | 80 - 89  |
-|   C   | 70 - 79  |
-|   D   | 60 - 69  |
-|   F   |   < 60   |
+| Grade | Range       | Grade | Range       |
+| :---- | :---------- | :---- | :---------- |
+| A+    | 100         | C     | 76&ndash;82 |
+| A     | 94&ndash;99 | C-    | 75          |
+| A-    | 93          | D+    | 74          |
+| B+    | 92          | D     | 67&ndash;73 |
+| B     | 85&ndash;91 | D-    | 66          |
+| B-    | 84          | F     | 65&ndash;0  |
+| C+    | 83          |       |             |
+
+Detailed grading details are in the **[detailed-homework-criteria.md](detailed-grading-criteria.md)** document.
 
 ## Submitting Homework
 
