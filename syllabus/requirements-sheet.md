@@ -24,6 +24,9 @@ The following books are handy if you prefer a printed book:
 | Due Date | URL                                                                                             |
 | :------: | :---------------------------------------------------------------------------------------------- |
 | Th 1/20  | <https://developer.mozilla.org/en-US/docs/Learn>                                                |
-| Th 1/20  | <https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works> |
-| Th 1/20  | <https://www.w3schools.com/>                                                                    |
+|          | <https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works> |
+|          | <https://www.w3schools.com/>                                                                    |
+|          | <https://en.wikipedia.org/wiki/Alonzo_Church>                                                   |
+|          | <https://en.wikipedia.org/wiki/Alan_Turing>                                                     |
+|          | <https://en.wikipedia.org/wiki/Grace_Hopper>                                                    |
 |          | ---                                                                                             |

@@ -6,7 +6,11 @@
 
 God *cannot* lie. It's an **immutable** property.
 
-> (Hebrews 6:17-18) "Wherein God, willing more abundantly to shew unto the heirs of promise the immutability of his counsel, confirmed it by an oath:  <sup>18</sup>That by two immutable things, in which it was impossible for God to lie, we might have a strong consolation, who have fled for refuge to lay hold upon the hope set before us:"
+> (Hebrews 6:17-18) "Wherein God, willing more abundantly to shew unto the heirs of promise the immutability of his counsel, confirmed it by an oath:  <sup>18</sup>That by two immutable things, in which **it was impossible for God to lie**, we might have a strong consolation, who have fled for refuge to lay hold upon the hope set before us:"
+
+and
+
+> "**God is not a man, that he should lie**; neither the son of man, that he should repent: hath he said, and shall he not do it? or hath he spoken, and shall he not make it good?" (Numbers 23:19)
 
 God's word is truth.
 
@@ -119,16 +123,41 @@ RGB colors says how much to blend red green and blue values to produce the color
 
 | Hex color | Color   |
 | :-------: | ------- |
-| 0xFF0000  | Red     |
-| 0x00FF00  | Green   |
-| 0x0000FF  | Blue    |
-| 0x00FFFF  | Cyan    |
-| 0xFF00FF  | Magenta |
-| 0xFFFF00  | Yellow  |
-| 0x7FFF00  | Orange  |
+| `#FF0000` | Red     |
+| `#00FF00` | Green   |
+| `#0000FF` | Blue    |
+| `#00FFFF` | Cyan    |
+| `#FF00FF` | Magenta |
+| `#FFFF00` | Yellow  |
+| `#7FFF00` | Orange  |
 |    ...    | ...     |
 
+**Floating-Point Numbers**
+
 **IEEE-754** is a standard that is used to represent many other kinds of decimal numbers. It consists of 1 bit for sign, 8 bits for exponent, and 23 bits for the fraction. A 32-bit number in this format is often called a **float** and a 64-bit number in this format is often called a **double**.
+
+| sign (1-bit) | exponent (8 bits) | fraction (23 bits) |
+| :----------: | :---------------: | :----------------: |
+|      31      |   30 &ndash; 23   |    22 &ndash; 0    |
+
+| sign (1-bit) | exponent (8 bits) | fraction (23 bits) |
+| :----------: | :---------------: | :----------------: |
+|      31      |   30 &ndash; 23   |    22 &ndash; 0    |
+
+
+```
+     0 01111100 01000000000000000000000 = 0.15625
+```
+
+We can represent the same bits as it would be stored in memory:
+
+```
+0011 1110 0010 0000 0000 0000 0000 0000 = 0x3E200000
+```
+
+Floating point numbers can accurately represent decimals to ~7 digits (32-bits) or ~16 digits (64-bits). JavaScript uses 64-bit floating point numbers to represent numbers. This type is called a `number`. For speed, it uses integer representations if it's known the values are integers. (`var x = 6 | 0`)
+
+Reference: <https://en.wikipedia.org/wiki/IEEE_754>
 
 **Turing Machines**
 
@@ -154,22 +183,15 @@ Instruction subleq(a, b, c)
 
 Fetch, Decode, Execute.
 
+> Draw a diagram of memory
 
-**Computer science is easy to start**
-
-
-
-## Part 2: Set up your development environment
-
-The goal here is to take any ordinary computer and set it up to do web development.
-
-> **Hint**: Using Notepad is considered hard mode. Use an Integrated Development Environment (IDE).
-
-- Install [Visual Studio Code](https://code.visualstudio.com)
-- Install [Git](https://git-scm.com/)
-- Install [Node.js](https://nodejs.com)
-- Install [Python](https://www.python.org/)
-
-**Are these all necessary?**
-
-Yes,
+```js
+var numOdd = 0
+var numEven = 0
+for (var i = 0; i <= 100; i++) {
+    if (i & 1)
+        numOdd++
+    else
+        numEven++
+}
+```
