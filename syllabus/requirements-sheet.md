@@ -30,3 +30,4 @@ The following books are handy if you prefer a printed book:
 |          | <https://en.wikipedia.org/wiki/Alan_Turing>                                                     |
 |          | <https://en.wikipedia.org/wiki/Grace_Hopper>                                                    |
 |          | ---                                                                                             |
+| Sa 1/22  | <https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/>                  |
