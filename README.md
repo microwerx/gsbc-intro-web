@@ -14,7 +14,7 @@ These are course notes / materials for an intro to web programming course.
 ## Labs
 
 * [lab1-unix](labs/lab1-unix.md)
-*
+* [lab2-github](labs/lab2-github.md)
 
 ## Homeworks
 
