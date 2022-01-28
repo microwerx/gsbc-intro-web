@@ -1,4 +1,4 @@
-# Lab 0: Using the Unix Operating System
+# Lab 1: Using the Unix Operating System
 
 ## Un*x Operating Systems
 
