@@ -12,4 +12,37 @@ The homework grading is is graded as follows:
 
 ## Project Criteria
 
-TBD
+Your project is graded as follows:
+
+* (100 points) Biography and Proposal
+  * (20 points) `/project/README.md` MarkDown is used for the report with level 1 and level 2 headings.
+  * (20 points) Write a 1 paragraph biography about yourself in third person: "Dr. Jonathan Metzgar is a web programming instructor. ...". Please remember this is public, so treat it like the bio you'd see from an author on a book.
+  * (20 points) 1 paragraph about websites you are inspired by. For example, The [Where is Webb?](https://www.jwst.nasa.gov/content/webbLaunch/whereIsWebb.html) site is really interesting because it summarizes all the real-time deployment details for this space telescope.
+  * (20 points) 1 paragraph about the website you'd like to create along with high level goals for the project for the midterm and final.
+  * (20 points) A first draft of the estimated timeframes for your project. Please be as detailed and realistic as you can be. **We will iterate over this last part.**
+    * **Good:** "Create a CSS Style sheet (4 hours by 2/14)"
+    * **Good:** "Research subject matter for web site (8 hours by 2/28)"
+    * **Bad:** "Write JavaScript to allow user interaction with the website (4 hours by 1/28)"
+    * **Good:** "Write JS logic to control left/right movements for player (4 hours by 2/14)"
+* (150 points) Midterm Project Report
+  * (20 points) A Working Website
+  * (20 points) `style.css` CSS stylesheet
+  * (20 points) `index.html` HTML root page
+  * (20 points) User interface elements (`<button>`, `<textarea>`, etc.)
+  * (20 points) `app.js` JavaScript logic which allow the website to do something interesting.
+  * (20 points) All code is formatted nicely with comments.
+  * (30 points) `Project/postmortem.md` A *postmortem* which briefly tells the story of how you *made* your website, what went wrong, and what went right.
+* (150 points) Final Project Report
+  * (20 points) A Working Website that has been greatly improved over the midterm epoch.
+  * (20 points) `style.css` CSS stylesheet
+  * (20 points) `index.html` HTML root page
+  * (20 points) User interface elements (`<button>`, `<textarea>`, etc.)
+  * (20 points) `app.js` JavaScript logic which allow the website to do something interesting.
+  * (20 points) All code is formatted nicely with comments.
+  * (30 points) `Project/postmortem.md` A *postmortem* which briefly tells the story of how you *improved* your website, what went wrong, and what went right.
+
+## What is a Paragraph?
+
+<https://anewdomain.net/jerry-pournelle/>
+
+> "A paragraph," I said, "is a group of sentences organized around one complete thought which is stated in the topic sentence."
