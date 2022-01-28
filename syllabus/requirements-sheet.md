@@ -23,6 +23,12 @@ The following books are handy if you prefer a printed book:
 
 | Due Date | URL                                                                                             |
 | :------: | :---------------------------------------------------------------------------------------------- |
+| Sa 1/28  | <https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL?>                |
+|          | Crash Course: Files and Filesystems <https://www.youtube.com/watch?v=KN8YgJnShPM>               |
+|          | Linux File System/Structure Explained! <https://www.youtube.com/watch?v=HbgzrKJvDRw>            |
+|          | <https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories>     |
+|          | <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>                       |
+|          | ---                                                                                             |
 | Th 1/20  | <https://developer.mozilla.org/en-US/docs/Learn>                                                |
 |          | <https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works> |
 |          | <https://www.w3schools.com/>                                                                    |
