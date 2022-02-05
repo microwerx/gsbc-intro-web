@@ -44,6 +44,8 @@ Refer to these docs for detailed instructions:
 
 ## Install SSH key on GitHub
 
+Go to your account profile and add your public key.
+
 ## Create our first HTML page
 
 ```bash
