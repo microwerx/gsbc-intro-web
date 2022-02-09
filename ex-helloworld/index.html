@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello, World</title>
+
+        <style>
+            h1, h2, h3, h4, h5, h6 {
+                font-family: sans-serif;
+            }
+
+            h1 {
+                font-size: 1.62em;
+                color: red;
+            }
+
+            h2 {
+                font-size: 1.31em;
+                color: royalblue;
+            }
+
+            code {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                color:darkgreen;
+            }
+
+            .fancyText {
+                font-family: 'STIX Two Text', 'Times New Roman', Times, serif;
+                font-style: italic;
+                margin-left: 10em;
+                margin-right: 10em;
+                padding: 10px;
+                border: 2px;
+                border-radius: 10px;
+                border-color: blueviolet;
+                border-style: dotted;
+                background-color: antiquewhite;
+                color: darkcyan;
+            }
+
+            .blockOfCode {
+                font-family: 'PragmataPro', 'Courier New', Courier, monospace;
+                margin-left: 10em;
+                margin-right: 10em;
+                background-color: lightgoldenrodyellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Hello, World</h1>
+
+        <hr/>
+
+        <p>This is a paragraph.</p>
+
+        <p>This is another paragraph.</p>
+
+        <p style="text-align: center;">This is a centered paragraph.</p>
+
+        <p>This paragraph has a link to <a href="https://loremipsum.io/">https://loremipsum.io/</a>. And the following paragraph uses the <a href="https://www.w3schools.com/Css/css_boxmodel.asp">CSS Box Model</a> for fancy text.</p>
+
+        <p class="fancyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <h2>Bulleted list</h2>
+
+        <ol>
+            <li>If you have <a href="https://python.org">Python</a> installed, you can run <code>python -m http.server</code> to run a web server.</li>
+            <li>If you have <a href="https://nodejs.org" target="_blank">NodeJS</a> installed, you can install some really good tools like <code>lite-server</code> and <code>eslint</code>.</li>
+            <li>Don't forget to <code>git pull</code> and <code>git push</code> before and after you start your programming session.</li>
+            <li>Every major browser has <b>developer tools</b> that enable you to debug just about any website problem.</li>
+            <li>You can check out really good documentation at <a href="https://w3schools.com">W3Schools.com</a> or the <a href="https://developer.mozilla.org">Mozilla Developer Network</a>.</li>
+        </ol>
+
+        <p>Don't forget to configure your user name and user email in Git.</p>
+
+        <pre class="blockOfCode">git config --global user.name "Your Name"
+git config --global user.email "email@domain.com"</pre>
+
+        <p>If you're really struggling with Git on the command line, try using it in VS Code.</p>
+
+        <h2>Script output</h2>
+
+        <hr/>
+
+        <script>
+            // Print the numbers 1 to 100 and add them as paragraph elements to the DOM.
+            for (let i = 0; i <= 100; i++) {
+                let node = document.createElement('p')
+                node.textContent = i.toString()
+                document.body.appendChild(node)
+            }
+        </script>
+    </body>
+</html>
