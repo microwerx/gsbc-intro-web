@@ -11,10 +11,10 @@ Read Jerry Pournelle's [How to Get My Job](https://www.jerrypournelle.com/slowch
 ## Essential Elements
 
 * Use CSS to style the elements on your page in your **wyld style**.
-* Model your page after the class example page. Please include a section ~"Site Links" to that will contain links to the remaining parts of your website.
-* Include a section ~"About My Design" with a paragraph about your design style. Your paragraph should contain at least four sentences.
-* Include a section ~"Design Influences" with a list (`<ul>`) of at least three links to other websites that really inspire you with their design. Put the most important one at the top. 
-* Include a section called ~"My First Program" which will contain the output of your first JS program for this class. Here are some ideas for that first program
+* Include a section ~**About My Design** with a paragraph about your design style. Your paragraph should contain at least four sentences.
+* Include a section ~**Design Influences** with a list (`<ul>`) of at least three links to other websites that really inspire you with their design. Put the most important one at the top. 
+* Please include a section ~**Site Links** to that will contain links to the remaining subpages of your website.
+* Include a section called ~**My First Program** which will contain the output of your first JS program for this class. Here are some ideas for that first program:
     * Change up the example script by printing something different than numbers.
     * Add a `<div id='helloworld'></div>` element and update its contents (see [W3Schools](https://www.w3schools.com/jsref/met_document_getelementbyid.asp)).
     * Add a button and a paragraph element and perform a calculation for the user (see [W3Schools](https://www.w3schools.com/js/js_events.asp)).
