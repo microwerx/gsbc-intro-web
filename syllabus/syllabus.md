@@ -113,9 +113,9 @@ Here is a list of tentative due dates for the homework and project assignments. 
 | :---: | :-----------------------------------------: | :---------: | :--------: |
 |  HW0  | GitHub account and `gsbc-intro-web` project |  Markdown   | 2022-01-24 |
 | PROJ1 |     Write a Biography and Project Ideas     |  Markdown   | 2022-01-31 |
-|  HW1  |       Make a web site with simple JS        |   HTML/JS   | 2022-02-14 |
-|  HW2  |        Implement an Algorithm in JS         |   HTML/JS   | 2022-02-21 |
-|  HW3  |   Make a user interface with JS callbacks   | HTML/CSS/JS | 2022-02-28 |
+|  HW1  |       Make a web site with simple JS        |   HTML/JS   | 2022-02-21 |
+|  HW2  |        Implement an Algorithm in JS         |   HTML/JS   | 2022-02-28 |
+|  HW3  |   Make a user interface with JS callbacks   | HTML/CSS/JS | 2022-03-05 |
 | PROJ2 |        Show off your midterm project        | HTML/CSS/JS | 2022-03-14 |
 |  HW4  |          Use a JavaScript library           |   HTML/JS   | 2022-03-21 |
 |  HW5  |      AJAX: Request HTML from a server       | HTML/CSS/JS | 2022-03-28 |
