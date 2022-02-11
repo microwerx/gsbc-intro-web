@@ -73,5 +73,36 @@ $ traceroute www.bing.com
 $ traceroute nvbc.org
 ```
 
-## Lab @Home: SSH
+## Running your own HTML server
 
+You can use [Python](https://python.org)
+
+* Windows: [Microsoft Store](https://www.microsoft.com/store/productId/9PJPW5LDXLZ5)
+* Windows: (https://python.org)
+* Mac: `brew install python`
+
+```bash
+$ python3 -m http.server
+```
+
+On Windows, if you installed version `3.10` from the MS Store, you can run:
+
+```bash
+PS > python3.10 -m http.server
+```
+
+You can also use [Node](https://nodejs.org). This is more advanced, but offers significantly more features. You need to know how to run commands as a **superuser**. In Mac and Linux, know how to use `sudo`. In Windows, know how to right-click on an app and `Run as Administrator`.
+
+Initial setup:
+
+```bash
+PS > npm install -g lite-server eslint
+```
+
+Run a web server:
+
+```bash
+PS > lite-server
+```
+
+At this point, once you are running a server, open the URL `http://localhost:8000` or `http://localhost:3000`. You may have a slightly different port than what is mentioned here, so check what your console tells you.
