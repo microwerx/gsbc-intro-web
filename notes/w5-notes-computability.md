@@ -1,4 +1,4 @@
-# Week 5: Computability
+# Week 5 -- Computability
 
 ## Part 1: CS Fundamentals
 
