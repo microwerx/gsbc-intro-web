@@ -53,7 +53,7 @@ cd github
 On the command line, run the following command:
 
 ```bash
-git clone https://github.com/yourusername/gsbc-intro-web
+git clone git@github.com:yourusername/gsbc-intro-web.git
 ```
 
 From your `home` directory, you should have a path:
@@ -98,3 +98,32 @@ git push
 ```
 
 This will now send our work back to GitHub. If we got back to the GitHub repository website, we will see the changes applied when we refresh the page. Cool, huh?
+
+## Workflow
+
+```bash
+# 1. at beginning of day, pull your repo
+git pull
+# 2. do your edits on your code
+vim myfile.md
+# 3. commit your work
+git commit -a -m "HW?: briefly explain work..."
+# repeat the steps two and three as necessary
+# 4. at the end of day, push your repo
+git push
+```
+
+## SSH
+
+Follow the instructions at <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>.
+
+The generally idea is:
+
+- Make your SSH key if you don't already have them.
+  - The private key is at `~/.ssh/id_ed25519`
+  - The public key is at `~/.ssh/id_ed25519.pub`
+- Set up GitHub with your SSH key by giving them the **public key**.
+- Add your SSH **private key** to your SSH Agent.
+  - `ssh-add ~/.ssh/id_25519`
+
+Please ensure your SSH agent is already.
