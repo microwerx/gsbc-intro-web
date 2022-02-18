@@ -168,35 +168,6 @@ Imagine a tape containing symbols. A tape head points to the current position on
 
 Let's look at a simple algorithm. If it reads a blank, or a 1 or 0, it keeps moving to the right. If it sees a blank, it moves left 1 space. While it keeps reading a 1, it turns it into a 0 and moves left. Lastly, if it reads a 0, then it turns it into a 1. Incredible! We have literally just added 1 using simple rules.
 
-
-**Memory, Comparison, Jump**
-
-If a language supports changing memory, a conditional branch, moving/jumping to a different portion of memory, and comparison, it is Turing Complete. Consider a [one instruction set computer](https://en.wikipedia.org/wiki/One-instruction_set_computer) SUBLEQ.
-
-```c++
-Instruction subleq(a, b, c)
-    Mem[b] = Mem[b] - Mem[a]
-    if (Mem[b] <= 0)
-        goto c
-```
-
-**So what do computers do?**
-
-Fetch, Decode, Execute.
-
-> Draw a diagram of memory
-
-```js
-var numOdd = 0
-var numEven = 0
-for (var i = 0; i <= 100; i++) {
-    if (i & 1)
-        numOdd++
-    else
-        numEven++
-}
-```
-
 **Limitations of Computers**
 
 >  Is there a mechanical procedure for separating mathematical truths from mathematical falsehoods?
@@ -248,3 +219,55 @@ Computer science is possible because of the attributes of God. But while we can 
 
 > "<sup>5</sup> To whom will ye liken me, and make me equal, and compare me, that we may be like?  <sup>6</sup> They lavish gold out of the bag, and weigh silver in the balance, and hire a goldsmith; and he maketh it a god: they fall down, yea, they worship.  <sup>7</sup> They bear him upon the shoulder, they carry him, and set him in his place, and he standeth; from his place shall he not remove: yea, one shall cry unto him, yet can he not answer, nor save him out of his trouble.  <sup>8</sup> Remember this, and shew yourselves men: bring it again to mind, O ye transgressors.  <sup>9</sup> Remember the former things of old: for I am God, and there is none else; I am God, and there is none like me,  <sup>10</sup> **Declaring the end from the beginning, and from ancient times the things that are not yet done, saying, My counsel shall stand, and I will do all my pleasure**:  <sup>11</sup> Calling a ravenous bird from the east, the man that executeth my counsel from a far country: yea, I have spoken it, I will also bring it to pass; I have purposed it, I will also do it." (Isaiah 46:5-11)
 >
+
+**Memory, Comparison, Jump**
+
+If a language supports changing memory, a conditional branch, moving/jumping to a different portion of memory, and comparison, it is Turing Complete. Consider a [one instruction set computer](https://en.wikipedia.org/wiki/One-instruction_set_computer) SUBLEQ.
+
+```c++
+Instruction subleq(a, b, c)
+    Mem[b] = Mem[b] - Mem[a]
+    if (Mem[b] <= 0)
+        goto c
+```
+
+**So what do computers do?**
+
+Fetch, Decode, Execute.
+
+## Example Program
+
+```javascript
+// A function has a name, arguments, and a block of statements
+function isOdd(x) {
+    if (i & 1)
+        return true;
+    else
+        return false;
+}
+
+// Variables store information
+var numOdd = 0
+var numEven = 0
+
+// Control structures allow us to run certain code, or to loop over them.
+for (var i = 0; i <= 100; i++) {
+    if (isOdd(i))
+        numOdd++
+    else
+        numEven++
+}
+
+// Print some strings to the console.
+console.log("The number of odd numbers is " + numOdd.toString());
+console.log("The number of even numbers is " + numEven.toString());
+```
+
+## Data Types
+
+- `string`: a sequence of 1 byte character codes in UTF-8.
+- `number`: a 64-bit floating point number. They may also represent integers if they do not have a decimal point or exponent.
+- `class`: a way to declare a group of:
+  - member variables
+  - member variables
+- `function`: a block of JavaScript commands that may take arguments
