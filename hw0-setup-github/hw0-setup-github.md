@@ -14,6 +14,8 @@ You probably do not have the program `git` installed on your computer. Here are 
 
 Use the Windows installer from the Git SCM website.
 
+- Ensure you use OpenSSH so that you can run the `ssh-agent`, `ssh-keygen`, and `ssh-add` commands from the command line.
+
 ## macOS
 
 First, install `brew`:
@@ -40,6 +42,23 @@ Or for Fedora derived systems using `yum`:
 ```bash
 $ sudo yum install git
 ```
+
+## Set up your username and email
+
+Before you can run git commands, you need to set up your name and your email so that Git knows who saved the commit messages.
+
+```bash
+$ git config --global user.name "Your Name"
+$ git config --global user.email "youremail@yourdomain.com"
+```
+
+You can check if they are set up by running the following command:
+
+```bash
+$ git config --list
+```
+
+If you have problems checking in code, please ensure you have done this step.
 
 ## Clone your repository
 
@@ -117,7 +136,7 @@ git push
 
 Follow the instructions at <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>.
 
-The generally idea is:
+The general process is:
 
 - Make your SSH key if you don't already have them.
   - The private key is at `~/.ssh/id_ed25519`
@@ -126,4 +145,26 @@ The generally idea is:
 - Add your SSH **private key** to your SSH Agent.
   - `ssh-add ~/.ssh/id_25519`
 
-Please ensure your SSH agent is already.
+Here is a high level summary of the commands:
+
+```bash
+# This saves the files `id_ed25519` and `id_ed25519.pub` in the directory `~/.ssh/`, where ~ is your home directory.
+
+# Use a simple passphrase you can easily email
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+# Ensure the ssh is started.
+$ eval "$(ssh-agent -s)"
+
+# Add the private key to the SSH agent
+$ ssh-add ~/.ssh/id_ed25519
+
+# If running a Mac, use the following command to copy the public key into your clipboard:
+$ pbcopy < ~/.ssh/id_ed25519.pub
+
+# If running Windows, use the following command to open Notepad, and use that to copy the public key into your clip board:
+$ notepad ~/.ssh/id_ed25519.pub
+
+# Go to https://github.com/settings/keys and add your public key and now you can test your connection to GitHub:
+$ ssh -T git@github.com
+```
