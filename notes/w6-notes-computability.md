@@ -67,10 +67,21 @@ It's useful to think that any value in JavaScript is a kind of **object**.
 
 ## Control Structures
 
-* block `{}`
-* `if`
+The following *statements* are used to control the flow of a program. They require us to understand the term *expression* and *statement*. An *expression* is a thing that must be **evaluated** to produce a value. It could be a numerical value, string value, boolean value, or an object. A *statement* in contrast is an **instruction** to do something, but doesn't have a value.
+
+* `{}` a block, or compound statement
+* `if ()` and `if-else`
 * `while`
 * `for`
+* `switch`
+* function call or variable assignment.
+
+Programming is designing a combination of statements and expressions together that solve a problem when they are finished. An **Algorithm** is a finite sequence of well-defined instructions. In ordinary language, it is the steps to solve a particular problem. Some examples include the Fizz Buzz program below, binary search, sorting a list, and so on. A higher level view of programming is combining algorithms to solve a problems. Sometimes we use the words "simplicity" or "elegant" when we refer to a well designed algorithm.
+
+From the [Wikipedia article on Algorithm](https://en.wikipedia.org/wiki/Algorithm), two quotes about simplicity or elegance in algorithms:
+
+> Knuth: " ... we want good algorithms in some loosely defined aesthetic sense. One criterion ... is the length of time taken to perform the algorithm .... Other criteria are adaptability of the algorithm to computers, its simplicity and elegance, etc."
+> Chaitin: " ... a program is 'elegant,' by which I mean that it's the smallest possible program for producing the output that it does"
 
 ## The Fizz Buzz program
 
