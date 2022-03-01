@@ -129,3 +129,99 @@ function pythagorus(a, b) {
     return Math.sqrt(a, b)
 }
 ```
+
+## Arrays
+
+We often want to avoid code like this:
+
+```javascript
+function getAnimalKind(itemChoice) {
+    if (itemChoice == 0) return "Reptiles";
+    if (itemChoice == 1) return "Mammals";
+    if (itemChoice == 2) return "Amphibians";
+    return "Unknown";
+}
+```
+
+We could put these items in an array instead using square brackets `[]`:
+
+```javascript
+const animalKinds = [ "Reptiles", "Mammals", "Amphibians" ];
+
+var itemChoice = 1;
+var item = animalKinds[itemChoice];
+
+// You can iterate (i.e. visit each element) through a list.
+for (var kind in animalKinds) {
+    console.log(kind);
+}
+
+// You can change the content by using the bracket notation.
+animalKinds[0] = "Birds";
+```
+
+An array allows us to use an integer **index** to look up an item in a list. The index is zero-based, meaning that 0 is the first element, 1 is the second element, and so on. If the array has N elements, then the last index is `N-1`.
+
+You can call `animalKinds.length` to get the size of the array. You want to avoid reading/writing to elements outside the array or you could cause your program to fail (or throw an error).
+
+## Structured Programming
+
+The term structured programming refers to organizing your code with control structures like `if`, `for`, `while`, etc.
+
+```javascript
+// Adjust the page element 'age' by classifying the input as text.
+var age = 10;
+ageNode = document.getElementById('age');
+if (age < 13) {
+    ageNode.innerHTML = "Just a kid!";
+} else if (age < 20) {
+    ageNode.innerHTML = "Teenager!";
+} else if (age >= 65) {
+    ageNode.innerHTML = "Older";
+} else {
+    ageNode.innerHTML = "Adult age";
+}
+```
+
+We can use `for` loops to iterate through a problem. For example: factorial.
+
+```javascript
+let numbers = [ 5, 10, 22, 11, 13 ];
+let sum = 0;
+for (let i = 0; i < numbers.count; i++) {
+    sum += numbers[i];
+}
+let average = sum / numbers.count;
+console.log("The sum of the numbers is " + sum.toString());
+console.log("The average of the numbers is " + average.toString());
+```
+
+We can choose to keep doing something with a `while` loop.
+
+```javascript
+let done = false;
+let loops = 0;
+while (!done) {
+    let x = Math.random();
+    if (x > 0.98) {
+        done = true;
+    }
+    loops++;
+}
+console.log("The while loop completed " + loops.toString() + " iterations");
+```
+
+There is a `do...while` loop that guarantees at least one execution:
+
+```javascript
+let done = false;
+let loops = 0;
+do {
+    let x = Math.random();
+    if (x > 0.98) {
+        done = true;
+    }
+    loops++;
+} while (!done)
+console.log("The do...while loop completed " + loops.toString() + " iterations");
+```
