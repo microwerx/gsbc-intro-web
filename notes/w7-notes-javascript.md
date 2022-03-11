@@ -55,8 +55,10 @@ true && false // Logical AND
 true || false // Logical OR
 true == false // Logical Equality
 true != false // Logical Inequality
+true == "1"   // Equality works with strings (not a good practice)
 true === true // Strict equality
 true === 1    // Strict equality
+true !== "1"  // Strict equality
 ```
 
 The last `===` checks if the types are the same and if they are the same type.
@@ -71,6 +73,11 @@ Lastly strings are composed with the `""` and `''` characters. They must match. 
 "4" == 4
 "4" === 4
 "4" === "4"
+console.log("I'm \"quoting a character\"")
+`
+Multiline strings use the backtick character.
+This is located to the left of your "1" key.
+`
 parseFloat("4.5")
 parseInt("4.5")
 
