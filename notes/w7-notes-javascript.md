@@ -73,6 +73,30 @@ Lastly strings are composed with the `""` and `''` characters. They must match. 
 "4" === "4"
 parseFloat("4.5")
 parseInt("4.5")
+
+`
+It was the best of times, it was the worst of times, it was the age of
+wisdom, it was the age of foolishness, it was the epoch of belief, it
+was the epoch of incredulity, it was the season of Light, it was the
+season of Darkness, it was the spring of hope, it was the winter of
+despair, we had everything before us, we had nothing before us, we were
+all going direct to Heaven, we were all going direct the other way--in
+short, the period was so far like the present period, that some of its
+noisiest authorities insisted on its being received, for good or for
+evil, in the superlative degree of comparison only.
+`
+
+"
+It was the best of times, it was the worst of times, it was the age of\n
+wisdom, it was the age of foolishness, it was the epoch of belief, it\n
+was the epoch of incredulity, it was the season of Light, it was the\n
+season of Darkness, it was the spring of hope, it was the winter of\n
+despair, we had everything before us, we had nothing before us, we were\n
+all going direct to Heaven, we were all going direct the other way--in\n
+short, the period was so far like the present period, that some of its\n
+noisiest authorities insisted on its being received, for good or for\n
+evil, in the superlative degree of comparison only.\n
+"
 ```
 
 Integers can range from -2147483648 to +2147483647. Floats have about 15 digits of accuracy and represent numbers +/- 1.7 x 10^308.
@@ -88,6 +112,14 @@ There are different styles of naming variables:
 - `snake_case` (commonly used in SQL)
 - `kebab-case` but this is only for CSS names or URLs.
 - `ALL_CAPITAL_LETTERS` (Like snake case, but for constants)
+
+```javascript
+// `const` makes variables immutable.
+const SCREEN_WIDTH = 1280
+const SCREEN_HEIGHT = 720
+
+var aspectRatio = SCREEN_WIDTH / SCREEN_HEIGHT
+```
 
 Let's do Pythagorean' Theorem:
 
@@ -128,6 +160,18 @@ By using a certain kind of comment.
 function pythagorus(a, b) {
     return Math.sqrt(a, b)
 }
+```
+
+Naming functions:
+
+```javascript
+function photoShop()
+function doEverythingPhotoshopDoes()
+function openPhotoShop()
+function deletePhotoShop()
+function drawMountain()
+function createMountainIcon()
+function verbNounPhrase()
 ```
 
 ## Arrays
