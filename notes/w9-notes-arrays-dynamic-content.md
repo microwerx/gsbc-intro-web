@@ -56,6 +56,16 @@ if (e) {
 }
 ```
 
+Functions:
+
+```javascript
+function square(x) {
+    return x*x;
+}
+
+console.log("The square of 2 is " + square(2).toString());
+```
+
 ## Arrays
 
 - [JS Arrays](https://www.w3schools.com/js/js_arrays.asp)
