@@ -1,4 +1,4 @@
-# Homework 2: JavaScript Algorithm
+# Homework 2: Arrays and Dynamic Content
 
 Create a new directory inside your repo and name it `hw2`. You will need to create the following three files inside of this directory:
 
