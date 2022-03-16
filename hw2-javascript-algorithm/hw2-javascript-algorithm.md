@@ -1,18 +1,33 @@
 # Homework 2: JavaScript Algorithm
 
-Write a Javascript program that solves one of the following problems:
+Create a new directory inside your repo and name it `hw2`. You will need to create the following three files inside of this directory:
 
-- Generate an array with 1000 random numbers. Iterate through this array, and find the largest number.
-- Given an integer number between 1 and 12, calculate its factorial
-- Write a HTML page that allows the user to enter an input and click a button for its output.
+- `index.html`
+- `style.css`
+- `algorithm.js`
 
-```javascript
-function calc(A) {
-    var answer = //...
-    // write your code here...
-    return answer
-}
+Your web page should contain three sections for each of the following problems:
 
-var A = //... some input
-console.log(calc(A))
-```
+- `Array of Integers`
+- `The Largest Number`
+- `The Sum`
+
+## Array of Integers
+
+- Generate an array with 100 random **integers** between 1 and 1000. You may want to use the `Math.random` function to assist you.
+- Print the numbers as individual `<p>` elements inside the `Array of Integers` section.
+
+## Largest Number
+
+- Iterate through this array, and find the largest number.
+- Print the number within a `<p>`  block using an `id` attribute and `document.getElementById(...)`.
+
+## The Sum
+
+- Iterate through this array and add all the numbers.
+- Print the sum within a `<p>` block using an `id` attribute as you did with the previous section.
+
+## Submission
+
+- Submit HW2 via Teams with a working link to your URL.
+- Your URL should look something like `https://yourusername.github.io/gsbc-intro-web/hw2/index.html`
