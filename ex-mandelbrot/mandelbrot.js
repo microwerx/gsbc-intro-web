@@ -12,7 +12,7 @@ function mandelbrotValues(x, y, n) {
     const Cimag = y;
     let Zreal = 0;
     let Zimag = 0;
-    var i = 0;
+    let i = 0;
     for (; i < n; i++) {
         value = Zreal.toString() + " + " + Zimag.toString() + "i";
         values.push(value);
@@ -32,12 +32,12 @@ function mandelbrotValues(x, y, n) {
             break;
         }
     }
-    if (i < n)
-        values.push("Not in set")
-    else if (i == 0)
+    if (i == 0)
+        values.push("Not in the set")
+    else if (i < n)
         values.push("In set")
     else
-        values.push("not enough iterations")
+        values.push("In the set")
     return values
 }
 
@@ -54,7 +54,7 @@ function mandelbrot(x, y, N) {
     let Zimag = 0;
     let ZrealSquared = Zreal*Zreal;
     let ZimagSquared = Zimag*Zimag;
-    var iterations = 0;
+    let iterations = 0;
     for (; iterations < N; iterations++) {
         // calculate the next value of Z.
 
@@ -85,14 +85,14 @@ mandelbrotDiv = document.getElementById('mandelbrot')
 function makeRandomImagePlot() {
     const W = 247 + 1;
     const H = 224 + 1;
-    var canvas = document.createElement("canvas");
+    let canvas = document.createElement("canvas");
     canvas.width = W;
     canvas.height = H;
-    var ctx = canvas.getContext("2d");
-    var image = ctx.createImageData(W, H);
+    let ctx = canvas.getContext("2d");
+    let image = ctx.createImageData(W, H);
     for (let i = 0; i < W*H*4; i++) {
         if (i%4 == 3)
-            image.data[i] = 255;
+            image.data[i] = 127;
         else
             image.data[i] = (Math.random() * 255.99) | 0;
     }
@@ -111,11 +111,11 @@ function makeMandelbrotPlot(W) {
     const y0 = -1.12;
     const dx = 2.47 / (W-1);
     const dy = 2.24 / (H-1);
-    var canvas = document.createElement("canvas");
+    let canvas = document.createElement("canvas");
     canvas.width = W;
     canvas.height = H;
-    var ctx = canvas.getContext("2d");
-    var image = ctx.createImageData(W, H);
+    let ctx = canvas.getContext("2d");
+    let image = ctx.createImageData(W, H);
     const shadesR = [ 100, 150, 200, 250, 50,  100 ];
     const shadesG = [ 150, 200, 250,  50, 100, 100 ];
     const shadesB = [ 200, 250,  50, 100, 150, 100 ];
@@ -138,22 +138,24 @@ function makeMandelbrotPlot(W) {
             image.data[offset + 3] = 255;
         }
     }
+    ctx.fillRect(0, 0, W, H);
     ctx.putImageData(image, 0, 0);
     mandelbrotDiv.appendChild(canvas);
 }
 
 // Make a 2D image of the Mandelbrot set.
 makeMandelbrotPlot(320)
+// makeRandomImagePlot();
 
 // Calculate the results of Mandelbrot set for a specific set of coordinates.
-var Zr = 1;
-var Zi = -0;
+let Zr = -0.5;
+let Zi = 0.5;
 document.getElementById('ZR').innerHTML = Zr.toString();
 document.getElementById('ZI').innerHTML = Zi.toString();
-var results = mandelbrotValues(Zr, Zi, 100)
+let results = mandelbrotValues(Zr, Zi, 100)
 
 // Print the results by appending paragraph nodes to the document body.
-for (var result of results)
+for (let result of results)
 {
     let textNode = document.createElement("p")
     textNode.textContent = result
