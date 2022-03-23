@@ -50,7 +50,7 @@ HTML Code:
 Javascript:
 
 ```javascript
-let e = document.getElementById('someElement');
+const e = document.getElementById('someElement');
 if (e) {
     e.innerHTML = "New <b>HTML</b> content."
 }

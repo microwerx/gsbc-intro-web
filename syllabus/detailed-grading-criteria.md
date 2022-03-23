@@ -25,7 +25,7 @@ Your project is graded as follows:
     * **Bad:** "Write JavaScript to allow user interaction with the website (4 hours by 1/28)"
     * **Good:** "Write JS logic to control left/right movements for player (4 hours by 2/14)"
 * (150 points) Midterm Project Report
-  * (20 points) A Working Website
+  * (20 points) A Working Website (`/project/index.html`)
   * (20 points) `style.css` CSS stylesheet
   * (20 points) `index.html` HTML root page
   * (20 points) User interface elements (`<button>`, `<textarea>`, etc.)
