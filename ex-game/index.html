@@ -62,8 +62,24 @@
         <h2>Pair Chart</h2>
         <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
 
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <script src="game.js"></script>
+
+        <!--
+            Bonus Game: Knockout!
+            In this game, you and the computer both have to roll to get to a certain number first: either 6, 7, 8, or 9. The first to get there wins.
+        -->
+
+        <h2>Knockout</h2>
+        <button id="koReset" onclick="KO = new KnockoutGame()">Reset</button>
+        <button id="koRoll"  onclick="KO.roll()">Roll!</button>
+        <div id="koKnockoutNumber"></div>
+        <div id="koPlayerRoll"></div>
+        <div id="koComputerRoll"></div>
+        <div id="koStatus">Click Roll to play your turn.</div>
+        <script src="knockout.js"></script>
+
+        <hr/>
+
     </body>
 </html>
