@@ -29,7 +29,7 @@ class KnockoutGame {
             koStatus.innerHTML = "Press reset to play again.";
         }
         else {
-            koStatus.innerHTML = "Click Roll to play your turn.";
+            koStatus.innerHTML = "Click roll to play your turn.";
         }
 
         // Roll for the player.
