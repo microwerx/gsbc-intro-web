@@ -52,10 +52,10 @@ let pairCounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
  *
  * @param {number} a
  * @param {number} b
- * @returns the result of the die roll with the range [a, b)
+ * @returns the result of the die roll with the range [a, b]
  */
 function rollDie(a, b) {
-    const roll = Math.floor(Math.random() * (b - a) + a);
+    const roll = Math.floor(Math.random() * (b - a + 1) + a);
     diceCounts[roll - 1]++;
     //myChart.data.datasets[0].data[roll - 1]++;
     return roll;
@@ -75,8 +75,8 @@ function rollDice(nodeId, a, b) {
 
 
 function rollDicePair(nodeId) {
-    const roll1 = rollDie(1, 7);
-    const roll2 = rollDie(1, 7);
+    const roll1 = rollDie(1, 6);
+    const roll2 = rollDie(1, 6);
     const sum = roll1 + roll2;
     pairCounts[sum - 2]++;
     setNodeContent("pair" + sum.toString(), pairCounts[sum - 2]);
