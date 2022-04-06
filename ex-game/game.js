@@ -86,6 +86,7 @@ function rollDicePair(nodeId) {
 function roll100DicePairs() {
     for (let i = 0; i < 100; i++)
         rollDicePair('pairContent')
+
     const xValues = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
     const yValues = pairCounts;
     const barColors = ["red", "green", "blue", "orange", "brown", "magenta", "red", "green", "blue", "orange", "brown"];

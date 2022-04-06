@@ -1,85 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
 
-        <title>Dice Roller Game</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 
-    <body>
-        <h1>Dice roller</h1>
+    <title>Dice Roller Game</title>
+</head>
 
-        <p>This page rolls a d6.</p>
+<body>
+    <h1>Dice roller</h1>
 
-        <button onclick="rollDice('diceContent', 1, 6)">Roll</button>
-        <button onclick="for (let i=0; i<100; i++) rollDice('diceContent', 1, 6)">Roll 100</button>
+    <p>This page rolls a d6.</p>
 
-        <hr/>
+    <button onclick="rollDice('diceContent', 1, 6)">Roll</button>
+    <button onclick="for (let i=0; i<100; i++) rollDice('diceContent', 1, 6)">Roll 100</button>
 
-        <div class="content" id="diceContent">Click the button to roll a d6.</div>
+    <hr />
 
-        <h2>Dice counts</h2>
-        <table>
-            <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-            </tr>
-            <tr>
-                <td id="dice1">0</td>
-                <td id="dice2">0</td>
-                <td id="dice3">0</td>
-                <td id="dice4">0</td>
-                <td id="dice5">0</td>
-                <td id="dice6">0</td>
-            </tr>
-        </table>
+    <div class="content" id="diceContent">Click the button to roll a d6.</div>
 
-        <h2>Pair Counts</h2>
-        <button onclick="rollDicePair('pairContent')">Roll</button>
-        <button onclick="roll100DicePairs()">Roll 100</button>
-        <p id="pairContent">Click roll above.</p>
-        <table>
-            <tr><th>Sum</th><th>Count</th></tr>
-            <tr><td>2</td><td id="pair2">0</td></tr>
-            <tr><td>3</td><td id="pair3">0</td></tr>
-            <tr><td>4</td><td id="pair4">0</td></tr>
-            <tr><td>5</td><td id="pair5">0</td></tr>
-            <tr><td>6</td><td id="pair6">0</td></tr>
-            <tr><td>7</td><td id="pair7">0</td></tr>
-            <tr><td>8</td><td id="pair8">0</td></tr>
-            <tr><td>9</td><td id="pair9">0</td></tr>
-            <tr><td>10</td><td id="pair10">0</td></tr>
-            <tr><td>11</td><td id="pair11">0</td></tr>
-            <tr><td>12</td><td id="pair12">0</td></tr>
-        </table>
+    <h2>Dice counts</h2>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        <tr>
+            <td id="dice1">0</td>
+            <td id="dice2">0</td>
+            <td id="dice3">0</td>
+            <td id="dice4">0</td>
+            <td id="dice5">0</td>
+            <td id="dice6">0</td>
+        </tr>
+    </table>
 
-        <h2>Pair Chart</h2>
-        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+    <h2>Pair Counts</h2>
+    <button onclick="rollDicePair('pairContent')">Roll</button>
+    <button onclick="roll100DicePairs()">Roll 100</button>
+    <p id="pairContent">Click roll above.</p>
+    <table>
+        <tr>
+            <th>Sum</th>
+            <th>Count</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td id="pair2">0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td id="pair3">0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td id="pair4">0</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td id="pair5">0</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td id="pair6">0</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td id="pair7">0</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td id="pair8">0</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td id="pair9">0</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td id="pair10">0</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td id="pair11">0</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td id="pair12">0</td>
+        </tr>
+    </table>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-        <script src="game.js"></script>
+    <h2>Pair Chart</h2>
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
 
-        <!--
-            Bonus Game: Knockout!
-            In this game, you and the computer both have to roll to get to a certain number first: either 6, 7, 8, or 9. The first to get there wins.
-        -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="game.js"></script>
 
-        <h2>Knockout</h2>
-        <button id="koReset" onclick="KO = new KnockoutGame()">Reset</button>
-        <button id="koRoll"  onclick="KO.roll()">Roll!</button>
-        <div id="koKnockoutNumber"></div>
-        <div id="koPlayerRoll"></div>
-        <div id="koComputerRoll"></div>
-        <div id="koStatus">Click Roll to play your turn.</div>
-        <script src="knockout.js"></script>
+    <!--
+Bonus Game: Knockout!
+In this game, you and the computer both have to roll to get to a certain number first: either 6, 7, 8, or 9. The first to get there wins.
+-->
 
-        <hr/>
+    <h2>Knockout</h2>
+    <button id="koReset" onclick="KO = new KnockoutGame()">Reset</button>
+    <button id="koRoll" onclick="KO.roll()">Roll!</button>
+    <div id="koKnockoutNumber"></div>
+    <div id="koPlayerRoll"></div>
+    <div id="koComputerRoll"></div>
+    <div id="koStatus">Click Roll to play your turn.</div>
+    <script src="knockout.js"></script>
 
-    </body>
+    <hr />
+
+</body>
+
 </html>

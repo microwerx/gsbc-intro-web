@@ -27,10 +27,14 @@ class KnockoutGame {
         // If we have a winner, then the game needs to be reset.
         if (this.winner != 0) {
             koStatus.innerHTML = "Press reset to play again.";
+            return;
         }
         else {
             koStatus.innerHTML = "Click roll to play your turn.";
         }
+
+        this.playerRollDiv.innerHTML = "";
+        this.computerRollDiv.innerHTML = "";
 
         // Roll for the player.
         this.playerRoll = this.rollPair();
@@ -40,6 +44,7 @@ class KnockoutGame {
             koStatus.innerHTML = "You won!";
             return;
         }
+
 
         // Roll for the computer.
         this.computerRoll = rollDie(1, 7);
