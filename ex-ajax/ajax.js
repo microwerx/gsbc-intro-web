@@ -6,12 +6,12 @@
  * @param {string} parentUrl
  */
 function loadContent(parentId, parentUrl) {
-    var parentNode = document.getElementById(parentId)
+    const parentNode = document.getElementById(parentId)
     if (!parentNode) {
         return
     }
 
-    var httpRequest = new XMLHttpRequest()
+    let httpRequest = new XMLHttpRequest()
 
     httpRequest.onreadystatechange = function(){
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
