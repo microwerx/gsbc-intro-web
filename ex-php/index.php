@@ -9,6 +9,9 @@
     </head>
 
     <body>
+    <div><a href="../index.html">Back to examples</a></div>
+
+
         <h1>PHP Test</h1>
 
 <?php
