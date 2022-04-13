@@ -1,0 +1,21 @@
+
+body {
+    /* background-color: cyan; */
+}
+
+.bodyContainer {
+    width: 640px;
+    background-color: azure;
+    display: block;
+    margin:auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 30px;
+    border-color: cyan;
+    border-style: solid;
+}
+
+a {
+    margin-left: auto;
+    margin-right: auto;
+}
