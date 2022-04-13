@@ -29,3 +29,12 @@ body {
 a {
     text-align: center;
 }
+
+video {
+    display: block;
+    border-radius: 10px;
+    border-color: #d4ab38;
+    border-width: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
