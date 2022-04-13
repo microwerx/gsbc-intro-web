@@ -38,3 +38,12 @@ video {
     margin-left: auto;
     margin-right: auto;
 }
+
+img {
+    display: block;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #3f7f3f;
+    margin-left: auto;
+    margin-right: auto;
+}
