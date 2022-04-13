@@ -1,8 +1,18 @@
 
-body {
-    /* background-color: cyan; */
+/* Load some fonts from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Press+Start+2P&display=swap');
+
+h1 {
+    font-family: 'Bubblegum Sans', cursive;
 }
 
+/* Set the line spacing for paragraphs to 1 1/2 lines */
+body {
+    font-family: 'Press Start 2P', monospace;
+    line-height: 1.5em;
+}
+
+/* This is the general style for each room page. Each page overloads the color in a style tag. */
 .bodyContainer {
     width: 640px;
     background-color: azure;
@@ -15,7 +25,7 @@ body {
     border-style: solid;
 }
 
+/* Center each link tag */
 a {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
