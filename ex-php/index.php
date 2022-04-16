@@ -15,7 +15,19 @@
         <h1>PHP Test</h1>
 
 <?php
-echo "<p>This came from PHP.</p>"
+echo $_GET['loggedIn'];
+$isLoggedIn = 0;
+if (array_key_exists('loggedIn', $_GET)) {
+    $isLoggedIn = $_GET['loggedIn'];
+}
+
+if ($isLoggedIn != 0) {
+    echo "Logged in!";
+} else {
+    echo "Logged out!";
+}
+
+//echo "<p>This came from PHP.</p>"
 ?>
 
 <h2>SQLite3 Info</h2>

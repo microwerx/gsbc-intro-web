@@ -1,5 +1,19 @@
 
 
+function makeMatrix4(
+    m11, m12, m13, m14,
+    m21, m22, m23, m24,
+    m31, m32, m33, m34,
+    m41, m42, m43, m44) {
+    // Build array in column major format.
+    return new Float32Array([
+        m11, m21, m31, m41,
+        m12, m22, m32, m42,
+        m13, m23, m33, m43,
+        m14, m24, m34, m44
+    ]);
+}
+
 let div = document.getElementById('content');
 let canvas = document.createElement("canvas");
 div.appendChild(canvas);
@@ -59,6 +73,8 @@ class App {
 
         // Setup shaders
         const vshaderSource = `
+uniform mat4 mvp_matrix;
+
 attribute vec3 a_position;
 attribute vec3 a_color;
 
@@ -66,7 +82,7 @@ varying vec4 v_color;
 
 void main(void) {
   v_color = vec4(a_color, 1.0);
-  gl_Position = vec4(a_position, 1.0);
+  gl_Position = mvp_matrix * vec4(a_position, 1.0);
 }`
         const fshaderSource = `
 precision mediump float;
@@ -107,6 +123,29 @@ void main(void) {
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
         gl.useProgram(this.program);
+        const mvpMatrixLoc = gl.getUniformLocation(this.program, "mvp_matrix");
+        if (mvpMatrixLoc) {
+            const sx = Math.abs(Math.sin(this.t1));
+            const sy = Math.abs(Math.sin(this.t1));
+            // Scaling matrix in Row major format
+            // const M = makeMatrix4(
+            //     sx, 0, 0, 0,
+            //     0, sy, 0, 0,
+            //     0, 0, 1, 0,
+            //     0, 0, 0, 1
+            // );
+
+            const cosTheta = Math.cos(this.t1);
+            const sinTheta = Math.sin(this.t1);
+            // Rotation matrix in Row major format
+            const M = makeMatrix4(
+                cosTheta, -sinTheta, 0, 0,
+                sinTheta, cosTheta, 0, 0,
+                0, 0, 1, 0,
+                0, 0, 0, 1
+            );
+            gl.uniformMatrix4fv(mvpMatrixLoc, false, M);
+        }
         gl.drawArrays(gl.TRIANGLES, 0, 3);
     }
 
