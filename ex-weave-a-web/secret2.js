@@ -1,19 +1,4 @@
 
-
-function makeMatrix4(
-    m11, m12, m13, m14,
-    m21, m22, m23, m24,
-    m31, m32, m33, m34,
-    m41, m42, m43, m44) {
-    // Build array in column major format.
-    return new Float32Array([
-        m11, m21, m31, m41,
-        m12, m22, m32, m42,
-        m13, m23, m33, m43,
-        m14, m24, m34, m44
-    ]);
-}
-
 let div = document.getElementById('content');
 let canvas = document.createElement("canvas");
 div.appendChild(canvas);
@@ -34,20 +19,42 @@ class App {
     }
 
     setup() {
-        // Here are three vertices for the triangle.
-        // They are laid out [X1, Y1, Z1, X2, Y2, Z2, X3, Y3, Z3]
+        // Here are 12 vertices for the tetrahedron.
+        // They are laid out so the vertices are in clockwise order.
+        // They are laid out [X1, Y1, Z1, X2, Y2, Z2, X3, Y3, Z3, ...]
         const positions = new Float32Array([
-            -1.0, -1.0, 0.0,    // Bottom left
-            1.0, -1.0, 0.0,     // Bottom right
-            0.0, 1.0, 0.0       // Center up
+            -1.0, -1.0, -1.0,   // Bottom 1
+            1.0, -1.0, -1.0,    // Bottom 2
+            0.0, -1.0, 1.0,     // Bottom 3
+
+            1.0, -1.0, -1.0,    // Bottom 2
+            -1.0, -1.0, -1.0,   // Bottom 1
+            0.0, 1.0, 0.0,      // Center up
+
+            0.0, -1.0, 1.0,     // Bottom 3
+            1.0, -1.0, -1.0,    // Bottom 2
+            0.0, 1.0, 0.0,      // Center up
+
+            -1.0, -1.0, -1.0,   // Bottom 1
+            0.0, -1.0, 1.0,     // Bottom 3
+            0.0, 1.0, 0.0,      // Center up
         ]);
 
         // Here are three colors for each vertex.
-        // They are laid out [R1, G1, B1, R2, B2, G2, R3, G3, B3]
+        // They are laid out [R1, G1, B1, R2, B2, G2, R3, G3, B3, ...]
         const colors = new Float32Array([
             1.0, 0.5, 0.0,  // Orange
-            0.0, 1.0, 0.5,  // Azure
-            0.5, 0.0, 1.0   // Purple
+            1.0, 0.5, 0.0,  // Orange
+            1.0, 0.5, 0.0,  // Orange
+            0.0, 1.0, 0.5,  // Spring Green
+            0.0, 1.0, 0.5,  // Spring Green
+            0.0, 1.0, 0.5,  // Spring Green
+            0.5, 0.0, 1.0,  // Purple
+            0.5, 0.0, 1.0,  // Purple
+            0.5, 0.0, 1.0,  // Purple
+            1.0, 0.0, 0.5,  // Rose
+            1.0, 0.0, 0.5,  // Rose
+            1.0, 0.0, 0.5,  // Rose
         ]);
 
         const MaxVertexCount = 16;
@@ -119,34 +126,29 @@ void main(void) {
     }
 
     draw() {
-        gl.clearColor(Math.abs(Math.sin(this.t1)) * 1.0, 0.0, 0.0, 1.0);
+        const s = Math.abs(Math.sin(this.t1)) * 0.5 + 0.5;
+        gl.clearColor(s * 0.1, s * 0.2, s * 0.3, 1.0);
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+        gl.enable(gl.DEPTH_TEST);
+        gl.enable(gl.CULL_FACE);
 
         gl.useProgram(this.program);
         const mvpMatrixLoc = gl.getUniformLocation(this.program, "mvp_matrix");
         if (mvpMatrixLoc) {
-            const sx = Math.abs(Math.sin(this.t1));
-            const sy = Math.abs(Math.sin(this.t1));
-            // Scaling matrix in Row major format
-            // const M = makeMatrix4(
-            //     sx, 0, 0, 0,
-            //     0, sy, 0, 0,
-            //     0, 0, 1, 0,
-            //     0, 0, 0, 1
-            // );
+            const S = makeScaling(s, s, 1);
+            const R = makeRotationXYZ(this.t1, this.t1, this.t1);
+            const P = makePerspective(45, 1.5, 1.0, 100.0);
+            const T = makeTranslation(0, 0, -5);
+            let M = makeIdentity();
+            M = concat(M, P);   // Add projection matrix.
+            M = concat(M, T);   // Add translation.
+            M = concat(M, S);   // Add scaling.
+            M = concat(M, R);   // Add rotation.
 
-            const cosTheta = Math.cos(this.t1);
-            const sinTheta = Math.sin(this.t1);
-            // Rotation matrix in Row major format
-            const M = makeMatrix4(
-                cosTheta, -sinTheta, 0, 0,
-                sinTheta, cosTheta, 0, 0,
-                0, 0, 1, 0,
-                0, 0, 0, 1
-            );
             gl.uniformMatrix4fv(mvpMatrixLoc, false, M);
         }
-        gl.drawArrays(gl.TRIANGLES, 0, 3);
+        gl.drawArrays(gl.TRIANGLES, 0, 12);
     }
 
     mainloop() {
