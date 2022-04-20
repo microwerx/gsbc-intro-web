@@ -1,0 +1,43 @@
+digraph G {
+    ranksep=2;
+    style=circo;
+ 
+    subgraph rooms {
+        ranksep=2;
+        r0 -> r1;
+        r0 -> r2;
+        r0 -> r3;
+        
+        r1 -> r0;
+        r1 -> r2;
+        r1 -> r4;
+        
+        r2 -> r0;
+        r2 -> r3;
+        r2 -> r4;
+        
+        r3 -> r0;
+        r3 -> r2;
+        r3 -> r4;
+        
+        r4 -> r1;
+        r4 -> r2;
+        r4 -> r3;
+    }
+    
+    subgraph resources {
+        ranksep=3;
+        "index.html" [style=filled,color="#ffcdcd"];
+        "app.js" [style=filled,color="#cdcdff"];
+        "video" [style=filled,color="#cdcdcd"];
+        "iframe" [style=filled,color="#cdffcd"];
+        "img" [style=filled,color="#ffcdff"];
+        
+        ranksep=3
+        r0 -> "index.html";
+        r1 -> "app.js";
+        r2 -> "video";
+        r3 -> "img";
+        r4 -> "iframe";
+    }
+}
