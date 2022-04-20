@@ -79,12 +79,13 @@ We will roughly follow the schedule below. All topics are subject to change. The
 
 ## Grading
 
-There are 6 homework assignments worth 100 points, a project proposal worth 100 points, a midterm project goal worth 150 points, and a final project goal worth 150 points. The total number of points for the class is 1000. Together they are proportioned as follows:
+There are three homework assignments worth 100 points, a project proposal worth 100 points, a midterm project goal worth 150 points, a final project goal worth 150 points, and a final exam worth 300 points. The total number of points for the class is 1000. Together they are proportioned as follows:
 
-* 60% Assignments (`HW1`-`HW6`)
+* 30% Assignments (`HW1`-`HW3`)
 * 10% Project Proposal (`PROJ1`)
 * 15% Midterm Project Goal (`PROJ2`)
 * 15% Final Project Goal (`PROJ3`)
+* 30% Final Exam (`EXAM`)
 
 Final grades are rounded to the nearest integer and then assigned to a letter grade. The grading scale is listed below:
 
